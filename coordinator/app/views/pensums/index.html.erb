@@ -1,4 +1,4 @@
-<h1>Listing pensums</h1>
+<h1>Pensums</h1>
 
 <table>
   <tr>
@@ -13,13 +13,13 @@
   <tr>
     <td><%= pensum.ano %></td>
     <td><%= pensum.semestre %></td>
-    <td><%= link_to 'Show', pensum %></td>
-    <td><%= link_to 'Edit', edit_pensum_path(pensum) %></td>
-    <td><%= link_to 'Destroy', pensum, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to 'Mostrar', pensum %></td>
+    <td><%= link_to 'Editar', edit_pensum_path(pensum) %></td>
+    <td><%= link_to 'Eliminar', pensum, method: :delete, data: { confirm: 'Esta seguro que desea eliminar este pensum?' } %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Pensum', new_pensum_path %>
+<%= link_to 'Nuevo Pensum', new_pensum_path %>
