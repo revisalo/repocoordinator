@@ -18,7 +18,7 @@ class CarpetaControllerTest < ActionController::TestCase
 
   test "should create carpetum" do
     assert_difference('Carpetum.count') do
-      post :create, carpetum: { anoingreso: @carpetum.anoingreso, codigo: @carpetum.codigo, docid: @carpetum.docid, materiaactual: @carpetum.materiaactual, materiafaltante: @carpetum.materiafaltante, materiasvista: @carpetum.materiasvista, nombre: @carpetum.nombre, semestreingreso: @carpetum.semestreingreso }
+      post :create, carpetum: { anoingreso: @carpetum.anoingreso, codigo: @carpetum.codigo, docid: @carpetum.docid, nombre: @carpetum.nombre, semestre: @carpetum.semestre }
     end
 
     assert_redirected_to carpetum_path(assigns(:carpetum))
@@ -35,7 +35,7 @@ class CarpetaControllerTest < ActionController::TestCase
   end
 
   test "should update carpetum" do
-    put :update, id: @carpetum, carpetum: { anoingreso: @carpetum.anoingreso, codigo: @carpetum.codigo, docid: @carpetum.docid, materiaactual: @carpetum.materiaactual, materiafaltante: @carpetum.materiafaltante, materiasvista: @carpetum.materiasvista, nombre: @carpetum.nombre, semestreingreso: @carpetum.semestreingreso }
+    put :update, id: @carpetum, carpetum: { anoingreso: @carpetum.anoingreso, codigo: @carpetum.codigo, docid: @carpetum.docid, nombre: @carpetum.nombre, semestre: @carpetum.semestre }
     assert_redirected_to carpetum_path(assigns(:carpetum))
   end
 

@@ -5,17 +5,11 @@ one:
   codigo: 1
   docid: 1
   anoingreso: 1
-  semestreingreso: 1
-  materiasvista: 
-  materiafaltante: 
-  materiaactual: 
+  semestre: 1
 
 two:
   nombre: MyString
   codigo: 1
   docid: 1
   anoingreso: 1
-  semestreingreso: 1
-  materiasvista: 
-  materiafaltante: 
-  materiaactual: 
+  semestre: 1
