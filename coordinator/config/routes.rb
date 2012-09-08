@@ -1,4 +1,6 @@
 Coordinator::Application.routes.draw do
+  resources :seccions
+
   resources :carpeta
 
   resources :maestria
