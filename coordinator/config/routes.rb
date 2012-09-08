@@ -1,4 +1,6 @@
 Coordinator::Application.routes.draw do
+  resources :pensums
+
   resources :materia
 
   # The priority is based upon order of creation:

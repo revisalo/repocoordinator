@@ -11,11 +11,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120908161052) do
+ActiveRecord::Schema.define(:version => 20120908164427) do
 
   create_table "materia", :force => true do |t|
     t.string   "nombre"
     t.string   "codigo"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "pensums", :force => true do |t|
+    t.integer  "ano"
+    t.integer  "semestre"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
