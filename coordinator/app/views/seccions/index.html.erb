@@ -17,7 +17,7 @@
     <td><%= seccion.profesor %></td>
     <td><%= link_to 'Mostrar', seccion %></td>
     <td><%= link_to 'Editar', edit_seccion_path(seccion) %></td>
-    <td><%= link_to 'Destruir', seccion, method: :delete, data: { confirm: 'está seguro?' } %></td>
+    <td><%= link_to 'Eliminar', seccion, method: :delete, data: { confirm: 'está seguro que desea eliminar esta seccion?' } %></td>
   </tr>
 <% end %>
 </table>
