@@ -11,7 +11,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120908165146) do
+ActiveRecord::Schema.define(:version => 20120908171906) do
+
+  create_table "carpeta", :force => true do |t|
+    t.string   "nombre"
+    t.integer  "codigo"
+    t.integer  "docid"
+    t.integer  "anoingreso"
+    t.integer  "semestre"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "maestria", :force => true do |t|
     t.string   "codigo"
