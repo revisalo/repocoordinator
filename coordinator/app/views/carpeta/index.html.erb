@@ -1,0 +1,37 @@
+<h1>Listing carpeta</h1>
+
+<table>
+  <tr>
+    <th>Nombre</th>
+    <th>Codigo</th>
+    <th>Docid</th>
+    <th>Anoingreso</th>
+    <th>Semestreingreso</th>
+    <th>Materiasvista</th>
+    <th>Materiafaltante</th>
+    <th>Materiaactual</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @carpeta.each do |carpetum| %>
+  <tr>
+    <td><%= carpetum.nombre %></td>
+    <td><%= carpetum.codigo %></td>
+    <td><%= carpetum.docid %></td>
+    <td><%= carpetum.anoingreso %></td>
+    <td><%= carpetum.semestreingreso %></td>
+    <td><%= carpetum.materiasvista %></td>
+    <td><%= carpetum.materiafaltante %></td>
+    <td><%= carpetum.materiaactual %></td>
+    <td><%= link_to 'Show', carpetum %></td>
+    <td><%= link_to 'Edit', edit_carpetum_path(carpetum) %></td>
+    <td><%= link_to 'Destroy', carpetum, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Carpetum', new_carpetum_path %>

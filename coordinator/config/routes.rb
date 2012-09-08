@@ -1,4 +1,6 @@
 Coordinator::Application.routes.draw do
+  resources :carpeta
+
   resources :maestria
 
   resources :pensums

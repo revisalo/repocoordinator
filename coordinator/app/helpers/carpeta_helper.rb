@@ -1,0 +1,2 @@
+module CarpetaHelper
+end

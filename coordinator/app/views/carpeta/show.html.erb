@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nombre:</b>
+  <%= @carpetum.nombre %>
+</p>
+
+<p>
+  <b>Codigo:</b>
+  <%= @carpetum.codigo %>
+</p>
+
+<p>
+  <b>Docid:</b>
+  <%= @carpetum.docid %>
+</p>
+
+<p>
+  <b>Anoingreso:</b>
+  <%= @carpetum.anoingreso %>
+</p>
+
+<p>
+  <b>Semestreingreso:</b>
+  <%= @carpetum.semestreingreso %>
+</p>
+
+<p>
+  <b>Materiasvista:</b>
+  <%= @carpetum.materiasvista %>
+</p>
+
+<p>
+  <b>Materiafaltante:</b>
+  <%= @carpetum.materiafaltante %>
+</p>
+
+<p>
+  <b>Materiaactual:</b>
+  <%= @carpetum.materiaactual %>
+</p>
+
+
+<%= link_to 'Edit', edit_carpetum_path(@carpetum) %> |
+<%= link_to 'Back', carpeta_path %>
