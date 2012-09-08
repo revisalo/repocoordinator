@@ -1,4 +1,6 @@
 Coordinator::Application.routes.draw do
+  resources :maestria
+
   resources :pensums
 
   resources :materia
